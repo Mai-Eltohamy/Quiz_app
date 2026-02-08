@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:untitled20/core/utils/app_colors.dart';
 import 'package:untitled20/core/utils/app_text.dart';
 import 'package:untitled20/core/utils/app_text_style.dart';
+import 'package:untitled20/core/widgets/custom_app_bar.dart';
 import 'package:untitled20/features/home/view/widgets/custom_body_home.dart';
 
 class HomePage extends StatefulWidget {
@@ -44,18 +45,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: AppColors.mainColor,
-        toolbarHeight: 80,
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.only(
-            bottomLeft: Radius.circular(25),
-            bottomRight: Radius.circular(25),
-          ),
-        ),
-        centerTitle: true,
-        title: Text(AppText.mainText, style: AppTextStyle.mainText),
-      ),
+      appBar: AppBar(flexibleSpace: CustomAppBar(name: AppText.mainText)),
       body: CustomBodyHome(),
     );
   }

@@ -4,4 +4,5 @@ class AppText {
   static const String send = "Send";
   static const String result = "Result";
   static const String retest = "Retest";
+  static const String check = "Check Answer";
 }

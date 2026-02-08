@@ -10,6 +10,6 @@ class AppTextStyle {
   static TextStyle secondText = TextStyle(
     fontSize: 12,
     fontWeight: FontWeight.w600,
-    color: AppColors.white,
+    color: AppColors.mainColor,
   );
 }
